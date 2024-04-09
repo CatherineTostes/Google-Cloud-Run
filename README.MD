@@ -15,5 +15,5 @@ curl -X GET http://localhost:8080/?cep=22250040
 
 ## Google Cloud Run:
 ```
-
+https://desafio-cloudrun-api-4bul5a6tea-uc.a.run.app/?cep=22250040
 ```
