@@ -55,7 +55,7 @@ func BuscaCepAndWeatherHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	cep, err := GetZipCode(cepParam)
-	if err != nil {
+	if err != nil || cep.Cep == "" {
 		http.Error(w, "can not find zipcode", http.StatusNotFound)
 		return
 	}
